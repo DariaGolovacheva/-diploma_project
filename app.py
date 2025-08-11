@@ -1,9 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
+
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return "Привет! Это начало моего дипломного проекта."
+# Главная страница
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-if __name__ == "__main__":
+# Страница со списком акций
+@app.route('/stocks')
+def stocks():
+    return "Здесь будут данные по акциям"
+
+if __name__ == '__main__':
     app.run(debug=True)
