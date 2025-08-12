@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Главная страница диплома</title>
-</head>
-<body>
-    <h1>Добро пожаловать в мой дипломный проект!</h1>
-    <p>Это главная страница.</p>
-    <p><a href="/stocks">Перейти к акциям</a></p>
-</body>
-</html>
+<form method="POST">
+    <input type="text" name="ticker" placeholder="Введите тикер компании (AAPL, TSLA)" required>
+    <button type="submit">Загрузить данные</button>
+</form>
+{% if table_html %}
+    <h2>Результаты:</h2>
+    {{ table_html|safe }}
+{% endif %}
