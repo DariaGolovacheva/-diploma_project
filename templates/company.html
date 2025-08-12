@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Данные по {{ ticker }}</title>
+</head>
+<body>
+    <h2>Последние 10 записей для {{ ticker }}</h2>
+    {{ table_html | safe }}
+    <p><a href="/company">Назад</a></p>
+</body>
+</html>

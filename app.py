@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 import yfinance as yf
-import pandas as pd
 
 app = Flask(__name__)
 

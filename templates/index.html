@@ -1,8 +1,10 @@
-<form method="POST">
-    <input type="text" name="ticker" placeholder="Введите тикер компании (AAPL, TSLA)" required>
-    <button type="submit">Загрузить данные</button>
-</form>
-{% if table_html %}
-    <h2>Результаты:</h2>
-    {{ table_html|safe }}
-{% endif %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diploma Project</title>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <p><a href="/company">Перейти к анализу компании</a></p>
+</body>
+</html>
