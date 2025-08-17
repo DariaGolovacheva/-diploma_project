@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Данные по {{ ticker }}</title>
-</head>
-<body>
-    <h2>Последние 10 записей для {{ ticker }}</h2>
+{% extends "base.html" %}
+{% block title %}Данные компании{% endblock %}
+
+{% block content %}
+<h2 class="mb-3">Данные по компании {{ ticker }}</h2>
+<div class="table-responsive">
     {{ table_html | safe }}
-    <p><a href="/company">Назад</a></p>
-</body>
-</html>
+</div>
+<a href="/company" class="btn btn-secondary mt-3">Новый поиск</a>
+{% endblock %}

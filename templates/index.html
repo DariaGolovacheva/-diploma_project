@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Diploma Project</title>
-</head>
-<body>
-    <h1>Добро пожаловать!</h1>
-    <p><a href="/company">Перейти к анализу компании</a></p>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<h1 class="mb-3">Добро пожаловать в дипломный проект!</h1>
+<p>Это наш первый тестовый запуск. Здесь будет информация о компании и прогноз риска банкротства.</p>
+{% endblock %}
